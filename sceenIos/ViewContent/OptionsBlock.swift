@@ -9,46 +9,33 @@ import SwiftUI
 
 
 struct OptionsBlock: View {
-    
+    let buttonTitles = ["Covid 19", "Doctor", "Medicine", "Hospital"]
+    let namesImages = ["sun","profile1","link", "hospital"]
     
     var body: some View {
-        let images = [Image("sun"), Image("profile1")]
         HStack(alignment: .top){
-            VStack(){
-            Circle()
-                .frame(width: 80, height: 80)
-                .padding(3)
-                .foregroundColor(Color(red: 0.98, green: 0.98, blue: 0.98))
-                .background(
-                images[0])
-                Text("Covid 19")
-                    .font(Font.regularText_15)
-                    .foregroundColor(Color(red: 0.53, green: 0.59, blue: 0.73))
+            ForEach(Array(buttonTitles.enumerated()), id: \.offset) {index, title in
+                VStack{
+                    Button(
+                        action: {print("button pressed") }
+                    ){
+                        Image(namesImages[index])
+                    }
+                    .frame(width: optionsFrameSize[0], height: optionsFrameSize[1])
+                    .padding(paddingBetweenOptions)
+                    .background(Color.primaryGray)
+                    .clipShape(Circle())
+                    Text(title)
+                        .font(Font.regularText_15)
+                        .foregroundColor(Color.textGray)
+                }
             }
-            VStack{
-            Circle()
-                .frame(width: 80, height: 80)
-                .padding(3)
-                .foregroundColor(Color(red: 0.98, green: 0.98, blue: 0.98))
-                Text("Hello")
-                    .font(Font.regularText_15)
-                    .foregroundColor(Color(red: 0.53, green: 0.59, blue: 0.73))                }
-            VStack{
-            Circle()
-                .frame(width: 80, height: 80)
-                .padding(3)
-                .foregroundColor(Color(red: 0.98, green: 0.98, blue: 0.98))
-                Text("Medicine")
-                    .font(Font.regularText_15)
-                    .foregroundColor(Color(red: 0.53, green: 0.59, blue: 0.73))                }
-            VStack{
-            Circle()
-            .frame(width: 80, height: 80)
-            .padding(3)
-            .foregroundColor(Color(red: 0.98, green: 0.98, blue: 0.98))
-                Text("Hospital")
-                    .font(Font.regularText_15)
-                    .foregroundColor(Color(red: 0.53, green: 0.59, blue: 0.73))                }
-        }    }
+        }
+    }
 }
 
+struct OptionsBlock_Previews: PreviewProvider {
+    static var previews: some View {
+        OptionsBlock()
+    }
+}

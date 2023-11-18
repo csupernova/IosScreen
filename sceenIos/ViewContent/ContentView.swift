@@ -12,11 +12,18 @@ struct InfoDoctor{
     let image: Image
     let name: String
     let jobTitle: String
+    let data: String
+    let time: String
 }
 
 class BackendStrings: ObservableObject{
     @State var username = "James"
-    @State var generalDoctor = InfoDoctor(image: Image("doctor1"),name: "Dr. Imran Syahir", jobTitle: "General Doctor")
+    @State var doctorOnBlueCard = InfoDoctor(
+        image: Image("doctor1"),
+        name: "Dr. Imran Syahir",
+        jobTitle: "General Doctor",
+        data: "Sunday, 12 June",
+        time: "11:00 - 12:00 AM")
     
 }
 
@@ -27,7 +34,7 @@ struct ContentView: View {
     var body: some View {
         VStack{
             Header(username: $backendStrings.username)
-            BlueCard(generalDoctor: $backendStrings.generalDoctor)
+            BlueCard(doctor: $backendStrings.doctorOnBlueCard)
             OptionsBlock()
             Spacer()
         }

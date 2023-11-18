@@ -20,6 +20,7 @@
 		0ACF8A7C2B089197009DA95E /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF8A7B2B089197009DA95E /* Poppins-Thin.ttf */; };
 		0ACF8A7E2B0896F1009DA95E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8A7D2B0896F1009DA95E /* Fonts.swift */; };
 		0ACF8A812B089DEA009DA95E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8A802B089DEA009DA95E /* Colors.swift */; };
+		0ACF8A872B08C462009DA95E /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8A862B08C462009DA95E /* Sizes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0ACF8A7B2B089197009DA95E /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Thin.ttf"; path = "../../../../../../../Volumes/ESD-USB/icons/Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		0ACF8A7D2B0896F1009DA95E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0ACF8A802B089DEA009DA95E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0ACF8A862B08C462009DA95E /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		0ACF8A722B088F5D009DA95E /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				0ACF8A852B08C434009DA95E /* Sizes */,
 				0ACF8A7F2B089DD6009DA95E /* Colors */,
 				0ACF8A732B088F67009DA95E /* Fonts */,
 			);
@@ -126,6 +129,14 @@
 				0ACF8A802B089DEA009DA95E /* Colors.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		0ACF8A852B08C434009DA95E /* Sizes */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF8A862B08C462009DA95E /* Sizes.swift */,
+			);
+			path = Sizes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +217,7 @@
 				0A074F0A2B0885BB00625D4E /* Header.swift in Sources */,
 				0A8DB7F72B0698D7006A447F /* sceenIosApp.swift in Sources */,
 				0ACF8A812B089DEA009DA95E /* Colors.swift in Sources */,
+				0ACF8A872B08C462009DA95E /* Sizes.swift in Sources */,
 				0A074F0C2B08866B00625D4E /* ContentView.swift in Sources */,
 				0ACF8A7E2B0896F1009DA95E /* Fonts.swift in Sources */,
 				0A074F0E2B08873800625D4E /* BlueCard.swift in Sources */,

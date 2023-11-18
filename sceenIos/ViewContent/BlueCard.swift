@@ -9,37 +9,45 @@ import SwiftUI
 
 struct BlueCard: View {
     
-    @Binding var generalDoctor: InfoDoctor
+    @Binding var doctor: InfoDoctor
     
     var body: some View {
         VStack(alignment: .leading){
             HStack{
-                generalDoctor.image
+                doctor.image
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .aspectRatio(contentMode: .fit)
                     .clipShape(Circle())
-                    .frame(width: 59, height: 74)
-                VStack{
-                    Text(generalDoctor.name)
+                    .frame(width: doctorFrameSize[0] , height: doctorFrameSize[1])
+                VStack(alignment: .leading){
+                    Text(doctor.name)
                 .font(Font.boldText_16)
                 .foregroundColor(.white)
+                .padding(.bottom, namePaddButtom)
+                .frame(height: 10)
             
-                Text(generalDoctor.jobTitle)
+                Text(doctor.jobTitle)
                     .font(Font.regularText_14)
                     .foregroundColor(Color.textColorSky)
             }
+                .frame(alignment: .top)
                 Spacer()
-                Image("arrow")
+                Button(
+                    action: {print("Button(arrow) pressed") }
+                ){
+                        Image("arrow")
+                }
             }
             Divider()
+        
             HStack{
                 Image("calendar")
-                Text("Sunday, 12 June")
+                Text(doctor.data)
                     .font(Font.regularText_12)
                     .foregroundColor(.white)
                 Spacer()
                 Image("clock")
-                Text("11:00 - 12:00 AM")
+                Text(doctor.time)
                     .padding(.trailing, 30)
                     .font(Font.regularText_12)
                     .foregroundColor(.white)
@@ -56,6 +64,11 @@ struct BlueCard: View {
 
 struct BlueCard_Previews: PreviewProvider {
     static var previews: some View {
-        BlueCard(generalDoctor: .constant(InfoDoctor(image: Image("doctor1"),name: "Dr. Imran Syahir", jobTitle: "General Doctor")))
+        BlueCard(doctor: .constant(InfoDoctor(
+            image: Image("doctor1"),
+            name: "Dr. Imran Syahir",
+            jobTitle: "General Doctor",
+            data: "Sunday, 12 June",
+            time: "11:00 - 12:00 AM")))
     }
 }
