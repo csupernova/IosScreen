@@ -12,6 +12,7 @@ import SwiftUI
 let paddingBySideHeader = CGFloat(7)
 let namePaddButtom = CGFloat(10)
 let paddingBetweenOptions = CGFloat(3)
+let paddingBySideCardBar = CGFloat(24)
 
 //Sizes
 let doctorFrameSize = [CGFloat(58), CGFloat(75)]

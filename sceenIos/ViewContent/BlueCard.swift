@@ -53,10 +53,12 @@ struct BlueCard: View {
                     .foregroundColor(.white)
             }
         }
-        .frame(width: 327, alignment: .top)
+        .frame(alignment: .top)
         .padding(20)
         .background(Color.primaryBlue)
         .cornerRadius(12)
+        .padding(.trailing, paddingBySideCardBar)
+        .padding(.leading, paddingBySideCardBar)
         
     }
 }

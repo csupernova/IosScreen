@@ -21,6 +21,7 @@
 		0ACF8A7E2B0896F1009DA95E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8A7D2B0896F1009DA95E /* Fonts.swift */; };
 		0ACF8A812B089DEA009DA95E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8A802B089DEA009DA95E /* Colors.swift */; };
 		0ACF8A872B08C462009DA95E /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8A862B08C462009DA95E /* Sizes.swift */; };
+		0ACF8A892B08D08C009DA95E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF8A882B08D08C009DA95E /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		0ACF8A7D2B0896F1009DA95E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		0ACF8A802B089DEA009DA95E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0ACF8A862B08C462009DA95E /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		0ACF8A882B08D08C009DA95E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0A074F0F2B0887F000625D4E /* OptionsBlock.swift */,
 				0A074F0D2B08873800625D4E /* BlueCard.swift */,
 				0A074F0B2B08866B00625D4E /* ContentView.swift */,
+				0ACF8A882B08D08C009DA95E /* SearchBar.swift */,
 			);
 			path = ViewContent;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				0A8DB7F72B0698D7006A447F /* sceenIosApp.swift in Sources */,
 				0ACF8A812B089DEA009DA95E /* Colors.swift in Sources */,
 				0ACF8A872B08C462009DA95E /* Sizes.swift in Sources */,
+				0ACF8A892B08D08C009DA95E /* SearchBar.swift in Sources */,
 				0A074F0C2B08866B00625D4E /* ContentView.swift in Sources */,
 				0ACF8A7E2B0896F1009DA95E /* Fonts.swift in Sources */,
 				0A074F0E2B08873800625D4E /* BlueCard.swift in Sources */,

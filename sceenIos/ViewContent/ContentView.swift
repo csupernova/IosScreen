@@ -35,6 +35,7 @@ struct ContentView: View {
         VStack{
             Header(username: $backendStrings.username)
             BlueCard(doctor: $backendStrings.doctorOnBlueCard)
+            SearchBar()
             OptionsBlock()
             Spacer()
         }
