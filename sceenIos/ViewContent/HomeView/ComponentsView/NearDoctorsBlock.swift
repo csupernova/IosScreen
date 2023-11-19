@@ -10,9 +10,14 @@ import SwiftUI
 struct NearDoctorsBlock: View {
     @Binding var nearDoctors: [NearDoctor]
     var body: some View {
-      //  Text("Near Doctor")
-           // .font(Font.semiBoldText_16)
-          //  .padding(24)
+        HStack{
+        Text("Near Doctor")
+            .font(Font.semiBoldText_16)
+            .padding(.bottom, 20)
+            .padding(.top, 20)
+            .padding(.leading, 30)
+        Spacer()
+        }
         HStack{
             VStack(alignment: .leading){
             ForEach(Array(nearDoctors.enumerated()), id: \.offset) {index, item in

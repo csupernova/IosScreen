@@ -11,6 +11,11 @@
 		0A074F0C2B08866B00625D4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A074F0B2B08866B00625D4E /* ContentView.swift */; };
 		0A074F0E2B08873800625D4E /* BlueCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A074F0D2B08873800625D4E /* BlueCard.swift */; };
 		0A074F102B0887F000625D4E /* OptionsBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A074F0F2B0887F000625D4E /* OptionsBlock.swift */; };
+		0A39FFAF2B09E4E100EFE5C1 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39FFAE2B09E4E100EFE5C1 /* CalendarView.swift */; };
+		0A39FFB12B09E57100EFE5C1 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39FFB02B09E57100EFE5C1 /* MessagesView.swift */; };
+		0A39FFB32B09E5C600EFE5C1 /* ProfileVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39FFB22B09E5C600EFE5C1 /* ProfileVIew.swift */; };
+		0A39FFB52B09EA1E00EFE5C1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39FFB42B09EA1E00EFE5C1 /* HomeView.swift */; };
+		0A39FFBF2B09EC4D00EFE5C1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39FFBE2B09EC4D00EFE5C1 /* Data.swift */; };
 		0A776AF32B08DBA6004AD1A6 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A776AEE2B08DBA6004AD1A6 /* Poppins-Bold.ttf */; };
 		0A776AF42B08DBA6004AD1A6 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A776AEF2B08DBA6004AD1A6 /* Poppins-Light.ttf */; };
 		0A776AF52B08DBA6004AD1A6 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A776AF02B08DBA6004AD1A6 /* Poppins-Regular.ttf */; };
@@ -31,6 +36,11 @@
 		0A074F0B2B08866B00625D4E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A074F0D2B08873800625D4E /* BlueCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCard.swift; sourceTree = "<group>"; };
 		0A074F0F2B0887F000625D4E /* OptionsBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsBlock.swift; sourceTree = "<group>"; };
+		0A39FFAE2B09E4E100EFE5C1 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		0A39FFB02B09E57100EFE5C1 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		0A39FFB22B09E5C600EFE5C1 /* ProfileVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVIew.swift; sourceTree = "<group>"; };
+		0A39FFB42B09EA1E00EFE5C1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0A39FFBE2B09EC4D00EFE5C1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		0A776AEE2B08DBA6004AD1A6 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		0A776AEF2B08DBA6004AD1A6 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		0A776AF02B08DBA6004AD1A6 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
@@ -62,14 +72,66 @@
 		0A074F062B08835E00625D4E /* ViewContent */ = {
 			isa = PBXGroup;
 			children = (
-				0A074F092B0885BB00625D4E /* Header.swift */,
-				0ACF8A8A2B08D9DC009DA95E /* NearDoctorsBlock.swift */,
-				0A074F0F2B0887F000625D4E /* OptionsBlock.swift */,
-				0A074F0D2B08873800625D4E /* BlueCard.swift */,
+				0A39FFBA2B09EB6700EFE5C1 /* ProfileVIew */,
+				0A39FFB92B09EB5900EFE5C1 /* MessagesView */,
+				0A39FFB82B09EB4900EFE5C1 /* CalendarView */,
+				0A39FFB62B09EAFF00EFE5C1 /* HomeView */,
 				0A074F0B2B08866B00625D4E /* ContentView.swift */,
-				0ACF8A882B08D08C009DA95E /* SearchBar.swift */,
 			);
 			path = ViewContent;
+			sourceTree = "<group>";
+		};
+		0A39FFB62B09EAFF00EFE5C1 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				0A39FFB72B09EB1200EFE5C1 /* ComponentsView */,
+				0A39FFB42B09EA1E00EFE5C1 /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		0A39FFB72B09EB1200EFE5C1 /* ComponentsView */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF8A882B08D08C009DA95E /* SearchBar.swift */,
+				0A074F0D2B08873800625D4E /* BlueCard.swift */,
+				0A074F0F2B0887F000625D4E /* OptionsBlock.swift */,
+				0ACF8A8A2B08D9DC009DA95E /* NearDoctorsBlock.swift */,
+				0A074F092B0885BB00625D4E /* Header.swift */,
+			);
+			path = ComponentsView;
+			sourceTree = "<group>";
+		};
+		0A39FFB82B09EB4900EFE5C1 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				0A39FFAE2B09E4E100EFE5C1 /* CalendarView.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		0A39FFB92B09EB5900EFE5C1 /* MessagesView */ = {
+			isa = PBXGroup;
+			children = (
+				0A39FFB02B09E57100EFE5C1 /* MessagesView.swift */,
+			);
+			path = MessagesView;
+			sourceTree = "<group>";
+		};
+		0A39FFBA2B09EB6700EFE5C1 /* ProfileVIew */ = {
+			isa = PBXGroup;
+			children = (
+				0A39FFB22B09E5C600EFE5C1 /* ProfileVIew.swift */,
+			);
+			path = ProfileVIew;
+			sourceTree = "<group>";
+		};
+		0A39FFBD2B09EC3C00EFE5C1 /* BackendData */ = {
+			isa = PBXGroup;
+			children = (
+				0A39FFBE2B09EC4D00EFE5C1 /* Data.swift */,
+			);
+			path = BackendData;
 			sourceTree = "<group>";
 		};
 		0A8DB7EA2B0698D7006A447F = {
@@ -91,6 +153,7 @@
 		0A8DB7F52B0698D7006A447F /* sceenIos */ = {
 			isa = PBXGroup;
 			children = (
+				0A39FFBD2B09EC3C00EFE5C1 /* BackendData */,
 				0ACF8A742B089092009DA95E /* Info.plist */,
 				0ACF8A722B088F5D009DA95E /* Design */,
 				0A074F062B08835E00625D4E /* ViewContent */,
@@ -224,12 +287,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A074F102B0887F000625D4E /* OptionsBlock.swift in Sources */,
+				0A39FFBF2B09EC4D00EFE5C1 /* Data.swift in Sources */,
+				0A39FFB52B09EA1E00EFE5C1 /* HomeView.swift in Sources */,
+				0A39FFB32B09E5C600EFE5C1 /* ProfileVIew.swift in Sources */,
 				0A074F0A2B0885BB00625D4E /* Header.swift in Sources */,
 				0ACF8A8B2B08D9DC009DA95E /* NearDoctorsBlock.swift in Sources */,
 				0A8DB7F72B0698D7006A447F /* sceenIosApp.swift in Sources */,
 				0ACF8A812B089DEA009DA95E /* Colors.swift in Sources */,
 				0ACF8A872B08C462009DA95E /* Sizes.swift in Sources */,
+				0A39FFAF2B09E4E100EFE5C1 /* CalendarView.swift in Sources */,
 				0ACF8A892B08D08C009DA95E /* SearchBar.swift in Sources */,
+				0A39FFB12B09E57100EFE5C1 /* MessagesView.swift in Sources */,
 				0A074F0C2B08866B00625D4E /* ContentView.swift in Sources */,
 				0ACF8A7E2B0896F1009DA95E /* Fonts.swift in Sources */,
 				0A074F0E2B08873800625D4E /* BlueCard.swift in Sources */,
