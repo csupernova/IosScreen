@@ -17,4 +17,5 @@ let paddingBySideCardBar = CGFloat(24)
 //Sizes
 let doctorFrameSize = [CGFloat(58), CGFloat(75)]
 let optionsFrameSize = [CGFloat(80), CGFloat(80)]
+let buttonFrameSize = [CGFloat(80), CGFloat(50)]
 

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileVIew: View {
+struct ProfileView: View {
     var body: some View {
         Text("Hello, Profile")
     }
@@ -15,6 +15,6 @@ struct ProfileVIew: View {
 
 struct ProfileVIew_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileVIew()
+        ProfileView()
     }
 }
