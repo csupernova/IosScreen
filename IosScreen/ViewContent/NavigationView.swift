@@ -48,7 +48,7 @@ extension NavigationView{
             Image(imageName)
                 .resizable()
                 .foregroundColor(isActive ? Color.blueSky : .gray)
-                .frame(width: 23, height: 23)
+                .frame(width: imageNavigSize, height: imageNavigSize)
             if isActive{
                 Text(title)
                     .font(Font.nunitoBold_14)
@@ -56,10 +56,9 @@ extension NavigationView{
             }
             Spacer()
         }
-        .frame(width: isActive ? .infinity: buttonFrameSize[0],
-               height: buttonFrameSize[1])
+        .frame(width: isActive ? .infinity: 80, height: 50)
         .background(isActive ? Color.navigBlue : Color.white)
-        .cornerRadius(12)
+        .cornerRadius(radiusCorner)
         
     }
 }
@@ -83,7 +82,7 @@ struct NavigationView: View {
                 ProfileView()
                     .tag(3)
             }
-            .ignoresSafeArea(.keyboard)
+            HStack{
             HStack{
                 ForEach((TabItems.allCases), id: \.self){ item in
                     Button{
@@ -97,9 +96,9 @@ struct NavigationView: View {
             .background(.white)
             .padding(.leading, paddingBySideCardBar)
             .padding(.trailing, paddingBySideCardBar)
-            
+            }
+            .background(.white)
         }
-        
     }
 }
 
