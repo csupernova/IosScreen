@@ -15,12 +15,10 @@ struct Header: View {
         HStack(){
             VStack(alignment: .leading){
                 Text("Hello, ")
-                    .font(
-                        Font.regularText_16)
+                    .font(Font.regularText_16)
                     .foregroundColor(Color.textGray)
                 Text("Hi, \(username)")
-                    .font(
-                        Font.boldText_20)
+                    .font(Font.boldText_20)
             }
             .padding(.leading, paddingBySideHeader)
             Spacer()

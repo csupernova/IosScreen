@@ -59,7 +59,7 @@ struct NearDoctorsBlock: View {
                 }
                 .padding(.horizontal, 16)
                 .shadow(color: Color(red: 0.35, green: 0.46, blue: 0.65).opacity(0.04), radius: 10, x: 2, y: 12)
-                .cornerRadius(12)
+                .cornerRadius(radiusCorner)
                 }
             }
             .padding(.leading, paddingBySideCardBar)

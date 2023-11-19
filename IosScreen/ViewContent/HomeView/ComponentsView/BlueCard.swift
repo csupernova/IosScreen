@@ -18,7 +18,7 @@ struct BlueCard: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .clipShape(Circle())
-                    .frame(width: doctorFrameSize[0] , height: doctorFrameSize[1])
+                    .frame(width: doctorFrameSize[0], height: doctorFrameSize[1])
                 VStack(alignment: .leading){
                     Text(doctor.name)
                 .font(Font.boldText_16)
@@ -35,7 +35,7 @@ struct BlueCard: View {
                 Button(
                     action: {print("Button(arrow) pressed") }
                 ){
-                        Image("arrow")
+                    Image("arrow")
                 }
             }
             Divider()
@@ -56,7 +56,7 @@ struct BlueCard: View {
         .frame(alignment: .top)
         .padding(20)
         .background(Color.primaryBlue)
-        .cornerRadius(12)
+        .cornerRadius(radiusCorner)
         .padding(.trailing, paddingBySideCardBar)
         .padding(.leading, paddingBySideCardBar)
         

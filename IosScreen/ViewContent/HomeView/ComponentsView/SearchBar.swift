@@ -18,7 +18,7 @@ struct SearchBar: View {
         }
         .padding(16)
         .background(Color.primaryGray)
-        .cornerRadius(12)
+        .cornerRadius(radiusCorner)
         .padding(.trailing, paddingBySideCardBar)
         .padding(.leading, paddingBySideCardBar)
         .padding(.top, 20)

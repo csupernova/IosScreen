@@ -13,15 +13,16 @@ struct HomeView: View {
     
     var body: some View {
         ScrollView{
-    VStack{
-        Header(username: $backendStrings.username)
-        BlueCard(doctor: $backendStrings.doctorOnBlueCard)
-        SearchBar()
-        OptionsBlock()
-        NearDoctorsBlock(nearDoctors: $backendStrings.nearDoctors)
-        Spacer()
+            VStack{
+                Header(username: $backendStrings.username)
+                BlueCard(doctor: $backendStrings.doctorOnBlueCard)
+                SearchBar()
+                OptionsBlock()
+                NearDoctorsBlock(nearDoctors: $backendStrings.nearDoctors)
+                Spacer()
+            }
+        }
     }
-        }    }
 }
 
 struct HomeView_Previews: PreviewProvider {
