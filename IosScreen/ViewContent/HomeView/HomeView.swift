@@ -12,14 +12,16 @@ struct HomeView: View {
     @ObservedObject private var backendStrings = BackendStrings()
     
     var body: some View {
-        ScrollView{
-            VStack{
-                Header(username: $backendStrings.username)
-                BlueCard(doctor: $backendStrings.doctorOnBlueCard)
-                SearchBar()
-                OptionsBlock()
-                NearDoctorsBlock(nearDoctors: $backendStrings.nearDoctors)
-                Spacer()
+        VStack{
+            Header(username: $backendStrings.username)
+                ScrollView{
+                VStack{
+                    BlueCard(doctor: $backendStrings.doctorOnBlueCard)
+                    SearchBar()
+                    OptionsBlock()
+                    NearDoctorsBlock(nearDoctors: $backendStrings.nearDoctors)
+                    Spacer()
+                }
             }
         }
     }
